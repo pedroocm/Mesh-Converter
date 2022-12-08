@@ -1,0 +1,15 @@
+FROM pymesh/pymesh
+
+WORKDIR /files
+
+# Main file
+# ADD build.py /files
+
+# Code folders
+# ADD lib /files
+# ADD scripts /files
+
+# # Mesh folders to work with
+# ADD malhas /files
+
+ENTRYPOINT ["bash"]

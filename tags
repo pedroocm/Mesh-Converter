@@ -1,0 +1,257 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEBUG	build.py	/^DEBUG = {$/;"	v
+DEBUG	lib/collapsedVolumes.py	/^DEBUG = False$/;"	v
+DEBUG	lib/laplacian_smoothing.py	/^DEBUG = False$/;"	v
+DEBUG	lib/pocos.py	/^DEBUG = False$/;"	v
+DEBUG	lib/tetraconversor.py	/^DEBUG = False$/;"	v
+DEBUG	lib/unstableVolumes.py	/^DEBUG = False$/;"	v
+Direction	lib/tetraconversor.py	/^class Direction(Enum):$/;"	c
+EAST	lib/tetraconversor.py	/^	EAST = 2$/;"	v	class:fDirection
+MESHES	scripts/show_mesh.py	/^MESHES = []$/;"	v
+MESH_NAMES	scripts/show_mesh.py	/^MESH_NAMES = sys.argv[1:]$/;"	v
+NORTH	lib/tetraconversor.py	/^	NORTH = 0$/;"	v	class:fDirection
+NORTHEAST	lib/tetraconversor.py	/^	NORTHEAST = 1$/;"	v	class:Direction
+NORTHWEST	lib/tetraconversor.py	/^	NORTHWEST = 0$/;"	v	class:Direction
+PATH	lib/debuger.py	/^PATH = 'debug'$/;"	v
+PATH	scripts/num_of_neighbors.py	/^PATH = sys.argv[1]$/;"	v
+SOUTH	lib/tetraconversor.py	/^	SOUTH = 1$/;"	v	class:fDirection
+SOUTHEAST	lib/tetraconversor.py	/^	SOUTHEAST = 3$/;"	v	class:Direction
+SOUTHWEST	lib/tetraconversor.py	/^	SOUTHWEST = 2$/;"	v	class:Direction
+THRESHOLD	lib/unstableVolumes.py	/^    THRESHOLD = int(input("Type the threshold for the volumes: "))$/;"	v
+THRESHOLD	lib/unstableVolumes.py	/^THRESHOLD = 11$/;"	v
+THRESHOLD	scripts/num_of_neighbors.py	/^THRESHOLD = 50$/;"	v
+Vector	lib/transformData.py	/^class Vector:$/;"	c
+WEST	lib/tetraconversor.py	/^	WEST = 3$/;"	v	class:fDirection
+__add__	lib/transformData.py	/^	def __add__(self, other):$/;"	m	class:Vector	file:
+__init__	lib/transformData.py	/^	def __init__(self, x, y, z):$/;"	m	class:Vector
+__mul__	lib/transformData.py	/^	def __mul__(self, scalar):$/;"	m	class:Vector	file:
+__str__	lib/transformData.py	/^	def __str__(self):$/;"	m	class:Vector	file:
+__sub__	lib/transformData.py	/^	def __sub__(self, other):$/;"	m	class:Vector	file:
+action	build.py	/^	action='store',$/;"	v
+action	build.py	/^	action='store_true',$/;"	v
+active_cells_path	build.py	/^active_cells_path = check_path(args.inactive_cells_path)$/;"	v
+apply_laplacian	build.py	/^	apply_laplacian = args.apply_laplacian_smoothing$/;"	v
+apply_laplacian	build.py	/^apply_laplacian = False$/;"	v
+areVolumesUnstable	lib/unstableVolumes.py	/^def areVolumesUnstable(vol1: float, vol2: float):$/;"	f
+arg_parser	build.py	/^arg_parser = argparse.ArgumentParser($/;"	v
+args	build.py	/^args = arg_parser.parse_args()$/;"	v
+avgVolumeCritiria	lib/collapsedVolumes.py	/^def avgVolumeCritiria(idV, hexa_volumes, avg_volume):$/;"	f
+avg_depth	lib/tetraconversor.py	/^def avg_depth(cellIdx):$/;"	f
+binarySearch	lib/generic_binary.py	/^def binarySearch(array, value, compFuncs):$/;"	f
+checkInputArguments	lib/laplacian_smoothing.py	/^def checkInputArguments():$/;"	f
+checkMeshCorrectness	scripts/corretude.py	/^def checkMeshCorrectness(start, end):$/;"	f
+checkVolumes	lib/unstableVolumes.py	/^def checkVolumes(checkedVolumes, tetraIdx:int, unstableNeighbours: list):$/;"	f
+check_path	build.py	/^def check_path(path):$/;"	f
+choices	build.py	/^	choices=[0, 1],$/;"	v
+choices	build.py	/^	choices=[1, 2],$/;"	v
+chosenElement	scripts/getElemsTwoNeigh.py	/^chosenElement = elementsWithTwoNeigh[ random.randint(0, len(elementsWithTwoNeigh) - 1) ]$/;"	v
+collapseVolume	lib/collapsedVolumes.py	/^def collapseVolume(id_collapsed, id_neighbor, voxels, direction, collapsed_blocks, mesh):$/;"	f
+collapsed_edges	scripts/detect_collapsed_edges.py	/^    collapsed_edges = {}$/;"	v
+collapsed_voxels	scripts/detect_collapsed_edges.py	/^collapsed_voxels = []$/;"	v
+computeAverageNeighbourVertices	lib/laplacian_smoothing.py	/^def computeAverageNeighbourVertices(vert: int, mesh: list, vertices: list):$/;"	f
+computeWeightBetweenVertices	lib/laplacian_smoothing.py	/^def computeWeightBetweenVertices(vert1: int, vert2: int):$/;"	f
+coordValues	build.py	/^coordValues = []$/;"	v
+coordValues	scripts/mesh_coverter.py	/^coordValues = []$/;"	v
+cornerPointFileName	scripts/mesh_coverter.py	/^cornerPointFileName = input("Enter the file name of the corner point mesh you wish to convert. It must be a .txt file. Type only the name, without the ext: ")$/;"	v
+corner_point_filename	build.py	/^corner_point_filename = file_path[:-4]$/;"	v
+counter	scripts/getElemsTwoNeigh.py	/^counter = 0$/;"	v
+createNewCells	lib/transformData.py	/^def createNewCells(cell, extPoint, arrayOfPoints, pointsDict, orientation="LEFT"):$/;"	f
+debugTetralization	lib/tetraconversor.py	/^def debugTetralization(path_to_mesh):$/;"	f
+debug_file_path	scripts/detect_collapsed_edges.py	/^debug_file_path = f"{path[:-4]}_collapsed_edges.txt"$/;"	v
+default	build.py	/^	default="",$/;"	v
+default	build.py	/^	default=0.125,$/;"	v
+default	build.py	/^	default=1,$/;"	v
+default	build.py	/^	default=False,$/;"	v
+description	build.py	/^	description='Convert hexa mesh to tetra mesh',$/;"	v
+destroyHN	lib/transformData.py	/^def destroyHN(matrixCells, arrayOfPoints, numberOfCellValues):$/;"	f
+directionEdge	lib/tetraconversor.py	/^directionEdge = {$/;"	v
+dtop	scripts/mesh_coverter.py	/^dtop = int(input("> "))$/;"	v
+dtopTransformTo3dList	lib/transformData.py	/^def dtopTransformTo3dList(width, numberOfCellValues, dtop):$/;"	f
+elementsWithTwoNeigh	scripts/getElemsTwoNeigh.py	/^elementsWithTwoNeigh = []$/;"	v
+eq	lib/transformData.py	/^	def eq(a, b):$/;"	f	function:extend
+eq	lib/transformData.py	/^	def eq(a, b):$/;"	f	function:triggerRight
+expand_active_block	lib/collapsedVolumes.py	/^def expand_active_block(active_cell_id, collapsed_cell_id, voxels, vertices, threshold=0.05):$/;"	f
+extend	lib/transformData.py	/^def extend(nova, column, arrayOfPoints, pointsDict, edge="TOP", orientation="LEFT"): #Orientation say in which way we're going to extend our edge; edge, if we are going to extend the top or bot edge. Column is the column in which we are doing the splits.$/;"	f
+extractCoord	lib/extractData2.py	/^def extractCoord(file):$/;"	f
+extractData2	lib/extractData2.py	/^def extractData2(file):$/;"	f
+extractData3	lib/extractData2.py	/^def extractData3(file):$/;"	f
+extractDataDTOP	lib/extractData2.py	/^def extractDataDTOP(file):$/;"	f
+extractHeader	lib/extractData2.py	/^def extractHeader(file):$/;"	f
+fDirection	lib/tetraconversor.py	/^class fDirection(Enum):$/;"	c
+face_indices	lib/collapsedVolumes.py	/^face_indices = {$/;"	v
+face_level	scripts/isolate_triangles.py	/^face_level = dict()$/;"	v
+faces	scripts/show_mesh.py	/^    faces = mesh.faces$/;"	v
+facesEdges	lib/tetraconversor.py	/^facesEdges = {$/;"	v
+file	scripts/detect_collapsed_edges.py	/^file = open(debug_file_path, "w")$/;"	v
+file_path	build.py	/^file_path = check_path(args.path)$/;"	v
+file_type	build.py	/^file_type = args.file_type$/;"	v
+findThreshold	lib/unstableVolumes.py	/^def findThreshold(filename):$/;"	f
+generatePocosInput	lib/pocos.py	/^def generatePocosInput(filename, args):$/;"	f
+generatePocosInput	scripts/generatePocosInput.py	/^def generatePocosInput(filename, args):$/;"	f
+generatePocosOutput	lib/pocos.py	/^def generatePocosOutput(filename, original_mesh_name, converted_mesh_name, inactiveCells = []):$/;"	f
+generate_mesh	lib/tetraconversor.py	/^def generate_mesh(tetraedros):$/;"	f
+getCellDepth	lib/tetraconversor.py	/^def getCellDepth(cellIdx, direction):$/;"	f
+getCollapsedVolumes	lib/collapsedVolumes.py	/^def getCollapsedVolumes(hexa_volumes, num_hexa, voxels, vertices, pinchArray, volume_critiria_is_enabled):$/;"	f
+getDirection	lib/collapsedVolumes.py	/^def getDirection(id_voxel, id_neighbor, voxels):$/;"	f
+getInactiveCells	lib/extractData2.py	/^def getInactiveCells(file):$/;"	f
+getNeighborColIdx	lib/tetraconversor.py	/^	def getNeighborColIdx(xy_index):$/;"	f	function:tetraConversor
+getNeighborColumn	lib/tetraconversor.py	/^	def getNeighborColumn(col_index, direction, faceDir):$/;"	f	function:tetraConversor
+getPoint	lib/transformData.py	/^def getPoint(coord, zCorn):$/;"	f
+getSharedFaces	lib/laplacian_smoothing.py	/^def getSharedFaces(tetra: int, tetraNeighbours: list, mesh: pymesh.Mesh) -> list:$/;"	f
+getUnstableNeighbours	lib/unstableVolumes.py	/^def getUnstableNeighbours(mesh, checkedVolumes, tetra_volumes,tetraIdx: int):$/;"	f
+getVertex	lib/tetraconversor.py	/^	def getVertex(cellIdx, vertexIdx, corrector=-1):$/;"	f	function:noHNTetraConversor
+getVertex	lib/tetraconversor.py	/^	def getVertex(cellIdx, vertexIdx, corrector=-1):$/;"	f	function:tetraConversor
+get_filename_arg	build.py	/^def get_filename_arg(prompt, required=False):$/;"	f
+get_option_arg	build.py	/^def get_option_arg(prompt, options=[]):$/;"	f
+get_tag_array	scripts/color_map.py	/^def get_tag_array(volumes: list):$/;"	f
+get_tag_number	scripts/color_map.py	/^def get_tag_number(volume: float):$/;"	f
+gt	lib/transformData.py	/^	def gt(a, b):$/;"	f	function:extend
+gt	lib/transformData.py	/^	def gt(a, b):$/;"	f	function:triggerRight
+hasEdge	lib/tetraconversor.py	/^	def hasEdge(xy_index, direction, curCoord):$/;"	f	function:tetraConversor
+has_collapsed_edge	scripts/detect_collapsed_edges.py	/^            has_collapsed_edge = True$/;"	v
+has_collapsed_edge	scripts/detect_collapsed_edges.py	/^    has_collapsed_edge = False$/;"	v
+have_hanging_nodes	build.py	/^have_hanging_nodes = True$/;"	v
+help	build.py	/^	help='1 for DTOP and 2 for ZCORN'$/;"	v
+help	build.py	/^	help='Deactivate the removal of collapsed volumes in the hexa mesh'$/;"	v
+help	build.py	/^	help='Enable laplacian smoothing'$/;"	v
+help	build.py	/^	help='Enable optimization for mesh with vertical columns'$/;"	v
+help	build.py	/^	help='Enable volume critiria to identify collapsed volumes'$/;"	v
+help	build.py	/^	help='Path to inactive cells file'$/;"	v
+help	build.py	/^	help='Path to pinchout array file'$/;"	v
+help	build.py	/^	help='Path to wells configuration file'$/;"	v
+hexa_mesh_filename	build.py	/^hexa_mesh_filename = corner_point_filename + "MSH.msh"$/;"	v
+hexa_volumes_collapsing	build.py	/^hexa_volumes_collapsing = not args.deactivate_hexa_collapsing$/;"	v
+hexa_volumes_critiria	build.py	/^hexa_volumes_critiria = args.enable_volume_critiria$/;"	v
+highlightCollpsedVolumes	lib/collapsedVolumes.py	/^def highlightCollpsedVolumes(collapsedVolumes, voxels, points, numHexa, nome):$/;"	f
+hn_removal_method	build.py	/^hn_removal_method = args.hn_removal_method$/;"	v
+inactiveCells	build.py	/^		inactiveCells = extractData2.getInactiveCells(active_cells_path)$/;"	v
+inactiveCells	build.py	/^	inactiveCells = [1 for i in range(qtdCells)]$/;"	v
+inactiveCells	build.py	/^	inactiveCells = collapsedVolumes.main(hexa_mesh_filename, inactiveCells, pinchArray, hexa_volumes_critiria)$/;"	v
+inactiveCells	build.py	/^inactiveCells = []$/;"	v
+isFaceDangling	scripts/checkDanglingFaces.py	/^def isFaceDangling(face: list):$/;"	f
+isLockedVertex	lib/laplacian_smoothing.py	/^def isLockedVertex(vertIndex: int, lockedVertices: dict) -> bool:$/;"	f
+isNumberNeighborsCorrect	scripts/corretude.py	/^def isNumberNeighborsCorrect(tetraIndex, tetra_neighborsList):$/;"	f
+isQualityBetter	lib/laplacian_smoothing.py	/^def isQualityBetter(vert: int, mesh: pymesh.Mesh, new_mesh: pymesh.Mesh):$/;"	f
+isRatioTooBig	lib/laplacian_smoothing.py	/^def isRatioTooBig(vol1: float, vol2: float, limit: int):$/;"	f
+isVertexExternal	lib/laplacian_smoothing.py	/^def isVertexExternal(vertIndex: int, mesh: pymesh.Mesh, vertices: list)-> bool:$/;"	f
+isVolumeChecked	lib/unstableVolumes.py	/^def isVolumeChecked(checkedVolumes, tetraIdx: int):$/;"	f
+is_collapsed	lib/tetraconversor.py	/^def is_collapsed(cellIdx, tol):$/;"	f
+is_face_collapsed	lib/tetraconversor.py	/^def is_face_collapsed(face):$/;"	f
+isolateTriangles	scripts/isolate_triangles.py	/^def isolateTriangles(maxDepth, curFace):$/;"	f
+laplacian_smoothing	lib/laplacian_smoothing.py	/^def laplacian_smoothing(mesh: pymesh.Mesh, locked_vertices={}):$/;"	f
+loadData	lib/unstableVolumes.py	/^def loadData(filename):$/;"	f
+locked_vertices	build.py	/^locked_vertices = pocos.generatePocosOutput(wells_input_path, pocos_input_args[0], pocos_input_args[1], pocos_inactiveCells)$/;"	v
+lt	lib/transformData.py	/^	def lt(a, b):$/;"	f	function:extend
+lt	lib/transformData.py	/^	def lt(a, b):$/;"	f	function:triggerRight
+lua_table_to_python_list	lib/pocos.py	/^def lua_table_to_python_list(string):$/;"	f
+main	lib/collapsedVolumes.py	/^def main(path_file, inactiveCells = [], pinchArray = [], volume_critiria_is_enabled=False):$/;"	f
+main	lib/convert_ebfvm.py	/^def main(file_path, type_of_mesh="TETRA"):$/;"	f
+main	lib/laplacian_smoothing.py	/^def main(path_to_mesh: str, locked_vertices={}):$/;"	f
+main	lib/unstableVolumes.py	/^def main(path):$/;"	f
+map_indexes	lib/transformData.py	/^def map_indexes(inactiveCells, index, offset=-1):$/;"	f
+max_num_of_neighbors	scripts/num_of_neighbors.py	/^        max_num_of_neighbors = num_neighbors$/;"	v
+max_num_of_neighbors	scripts/num_of_neighbors.py	/^max_num_of_neighbors = 0$/;"	v
+mesh	scripts/checkDanglingFaces.py	/^mesh = pymesh.load_mesh('uniao_tetra.msh');$/;"	v
+mesh	scripts/color_map.py	/^mesh = pymesh.load_mesh("uniao_tetrav.msh")$/;"	v
+mesh	scripts/corretude.py	/^mesh = pymesh.load_mesh(".\/outputs\/output_mesh2\/converted_meshs\/first_tetrahedralization.msh")$/;"	v
+mesh	scripts/detect_collapsed_edges.py	/^mesh = pymesh.load_mesh(path)$/;"	v
+mesh	scripts/getElemsTwoNeigh.py	/^mesh = pymesh.load_mesh('uniao_tetrav.msh')$/;"	v
+mesh	scripts/isolate_triangles.py	/^mesh = pymesh.load_mesh("triang_apos_remove.msh")$/;"	v
+mesh	scripts/num_of_neighbors.py	/^mesh = pymesh.load_mesh(PATH)$/;"	v
+mesh	scripts/pyMeshTetrahedra.py	/^mesh = pymesh.load_mesh(sys.argv[1])$/;"	v
+mesh	scripts/second_tetrahedralization.py	/^mesh = pymesh.load_mesh("uniao_tetra.msh")$/;"	v
+mesh	scripts/second_tetrahedralization.py	/^mesh = pymesh.resolve_self_intersection(mesh)$/;"	v
+mesh_file	scripts/mesh_coverter.py	/^mesh_file = f"{cornerPointFileName}MSH.msh"$/;"	v
+mesh_name	lib/laplacian_smoothing.py	/^    mesh_name = checkInputArguments()$/;"	v
+metavar	build.py	/^	metavar='inactive_cells_path',$/;"	v
+metavar	build.py	/^	metavar='pinchout_array_path',$/;"	v
+metavar	build.py	/^	metavar='wells_path',$/;"	v
+method	scripts/mesh_coverter.py	/^method = int(input("> "))$/;"	v
+neighborEdge	lib/tetraconversor.py	/^neighborEdge = {$/;"	v
+new_faces	scripts/isolate_triangles.py	/^new_faces = isolateTriangles(10, 9501)$/;"	v
+new_faces	scripts/isolate_triangles.py	/^new_faces = numpy.asarray(new_faces)$/;"	v
+new_mesh	scripts/isolate_triangles.py	/^new_mesh = pymesh.form_mesh(mesh.vertices, new_faces)$/;"	v
+new_mesh	scripts/pyMeshTetrahedra.py	/^new_mesh = pymesh.hex_to_tet(mesh)$/;"	v
+new_mesh	scripts/second_tetrahedralization.py	/^new_mesh = tet.mesh$/;"	v
+noHNTetraConversor	lib/tetraconversor.py	/^def noHNTetraConversor(meshFilename, numCellsPerAxis, inactiveCells):$/;"	f
+numElemsPerThread	scripts/corretude.py	/^numElemsPerThread = mesh.num_elements \/\/ numOfThreads$/;"	v
+numOfThreads	scripts/corretude.py	/^numOfThreads = 33$/;"	v
+num_neighbors	scripts/num_of_neighbors.py	/^    num_neighbors = len(mesh.get_vertex_adjacent_vertices(v_id))$/;"	v
+numberCellsPerAxis	build.py	/^numberCellsPerAxis = []$/;"	v
+numberCellsPerAxis	scripts/mesh_coverter.py	/^numberCellsPerAxis = []$/;"	v
+output_mesh_path	build.py	/^	output_mesh_path = f"{tetra_mesh_filename[:-4]}_laplacian.msh"$/;"	v
+output_mesh_path	build.py	/^	output_mesh_path = tetra_mesh_filename$/;"	v
+output_mesh_path	build.py	/^output_mesh_path = ""$/;"	v
+output_mesh_path	build.py	/^output_mesh_path = hexa_mesh_filename$/;"	v
+path	lib/collapsedVolumes.py	/^    path = sys.argv[1]$/;"	v
+path	lib/unstableVolumes.py	/^    path = input("Type path to mesh file: ")$/;"	v
+path	scripts/detect_collapsed_edges.py	/^path = sys.argv[1]$/;"	v
+pinchArray	build.py	/^		pinchArray = extractData2.getInactiveCells(pinch_array_path)$/;"	v
+pinchArray	build.py	/^	pinchArray = [1 for i in range(qtdCells)]$/;"	v
+pinchArray	build.py	/^pinchArray = []$/;"	v
+pinch_array_path	build.py	/^pinch_array_path = check_path(args.pinchout_array_path)$/;"	v
+pocos_inactiveCells	build.py	/^pocos_inactiveCells = inactiveCells[:]$/;"	v
+pocos_input_args	build.py	/^pocos_input_args = [$/;"	v
+printTable	lib/unstableVolumes.py	/^def printTable(mesh, checkedVolumes, tetra_volumes):$/;"	f
+printTetraInfo	lib/unstableVolumes.py	/^def printTetraInfo(mesh, tetra_volumes, tetraIdx: int):$/;"	f
+printTetraInfoWithNeighbours	lib/unstableVolumes.py	/^def printTetraInfoWithNeighbours(mesh, tetra_volumes, tetraIdx: int, unstableNeighbours: list):$/;"	f
+profile	lib/debuger.py	/^def profile(func):$/;"	f
+prog	build.py	/^	prog="converter",$/;"	v
+qtdCells	build.py	/^	qtdCells = numberCellsPerAxis[0] * numberCellsPerAxis[1] * numberCellsPerAxis[2]$/;"	v
+qtdCells	build.py	/^qtdCells = -1$/;"	v
+qtdCelulasDepois	build.py	/^qtdCelulasDepois = qtdCells$/;"	v
+qtdCelulasDepois	scripts/mesh_coverter.py	/^	qtdCelulasDepois = numberCellsPerAxis[0] * numberCellsPerAxis[1] * numberCellsPerAxis[2]$/;"	v
+qtdCelulasDepois	scripts/mesh_coverter.py	/^	qtdCelulasDepois = transformData.destroyHN(matrixOfCells, arrayOfPoints, numberCellsPerAxis)$/;"	v
+read_input_file	lib/pocos.py	/^def read_input_file(file_name):$/;"	f
+read_input_lua_file	lib/pocos.py	/^def read_input_lua_file(file_name):$/;"	f
+refinement	build.py	/^refinement = args.refinement_threshold$/;"	v
+removeCollapsedVolumes	lib/collapsedVolumes.py	/^def removeCollapsedVolumes(collapsedVolumes, voxels):$/;"	f
+smoothing	scripts/mesh_coverter.py	/^smoothing = int(input("> "))$/;"	v
+tag_array	scripts/color_map.py	/^tag_array = get_tag_array(mesh.get_attribute("voxel_volume"))$/;"	v
+test_get_tag	scripts/test_color_map.py	/^def test_get_tag():$/;"	f
+test_get_tag_array	scripts/test_color_map.py	/^def test_get_tag_array():$/;"	f
+tet	scripts/second_tetrahedralization.py	/^tet = pymesh.tetgen()$/;"	v
+tetraConversor	lib/tetraconversor.py	/^def tetraConversor(meshFilename: str, numCellsPerAxis: list, inactiveCells: list, optimization=False, refinement=0.125):$/;"	f
+tetra_mesh_filename	build.py	/^	tetra_mesh_filename = f"{corner_point_filename}MSH_tetra.msh"$/;"	v
+tetra_optimization	build.py	/^	tetra_optimization = args.tetra_optimization$/;"	v
+tetra_optimization	build.py	/^tetra_optimization = False$/;"	v
+thicknessCritiria	lib/collapsedVolumes.py	/^def thicknessCritiria(idV, voxels, vertices):$/;"	f
+threads	scripts/corretude.py	/^threads = list()$/;"	v
+threshold	lib/collapsedVolumes.py	/^threshold = 10**-1$/;"	v
+transformTo3dList	lib/transformData.py	/^def transformTo3dList(coordValues, zcornValues, numberOfCellValues, inactiveCells = [], pinchArray = []):$/;"	f
+transformTo3dList2	lib/transformData.py	/^def transformTo3dList2(coordValues, zcornValues, numberOfCellValues, inactiveCells):$/;"	f
+transformToEbFVM	lib/transformData.py	/^def transformToEbFVM(matrixCells, arrayOfPoints, numberOfCellValues):$/;"	f
+transformToEbFVM2	lib/transformData.py	/^def transformToEbFVM2(matrixCells, arrayOfPoints, qtdCelulas, nome):$/;"	f
+transformToMSH	lib/transformData.py	/^def transformToMSH(matrixCells, arrayOfPoints, numberOfCellValues):$/;"	f
+transformToMSH2	lib/transformData.py	/^def transformToMSH2(matrixCells, arrayOfPoints, qtdCelulas, nome):$/;"	f
+tri_tetra	lib/tetraconversor.py	/^	def tri_tetra(cell, index):$/;"	f	function:noHNTetraConversor
+tri_tetra	lib/tetraconversor.py	/^	def tri_tetra(cell, index):$/;"	f	function:tetraConversor
+trigger	lib/transformData.py	/^	def trigger(listaCelulasAtuais, currentX, j):$/;"	f	function:destroyHN
+triggerRight	lib/transformData.py	/^def triggerRight(nova, rightColumn):$/;"	f
+type	build.py	/^	type=float,$/;"	v
+type	build.py	/^	type=int,$/;"	v
+type	build.py	/^	type=str,$/;"	v
+unstableVolumes	lib/unstableVolumes.py	/^def unstableVolumes(mesh, checkedVolumes, tetra_volumes, THRESHOLD, DEBUG=False):$/;"	f
+usage	build.py	/^	usage="%(prog)s path type_of_file [options]"$/;"	v
+vertices	scripts/show_mesh.py	/^    vertices = mesh.vertices$/;"	v
+voxel	scripts/detect_collapsed_edges.py	/^    voxel = list(voxel_array)$/;"	v
+wells_input_path	build.py	/^	wells_input_path = os.path.join(path, "pocos_input.txt")$/;"	v
+wells_input_path	build.py	/^wells_input_path = check_path(args.wells_path)$/;"	v
+wrapper	lib/debuger.py	/^    def wrapper(*args, **kwargs):$/;"	f	function:profile
+writeCFX5	lib/convert_ebfvm.py	/^def writeCFX5(voxels, points, num_voxels, type_of_mesh, nome):$/;"	f
+writeCFX5	lib/tetraconversor.py	/^def writeCFX5(voxels, points, numTetra, nome):$/;"	f
+writeCFX5	scripts/second_tetrahedralization.py	/^def writeCFX5(voxels, points, numTetra, nome):$/;"	f
+writeMSH	lib/collapsedVolumes.py	/^def writeMSH(voxels, points, numHexa, nome):$/;"	f
+writeMSH	lib/tetraconversor.py	/^def writeMSH(voxels, points, numTetra, nome):$/;"	f
+writeMSH	lib/unstableVolumes.py	/^def writeMSH(checkedVolumes, voxels, points, numTetra, nome):$/;"	f
+writeMSH	scripts/color_map.py	/^def writeMSH(voxels, points, numTetra, nome):$/;"	f
+writeMSH	scripts/isolate_triangles.py	/^def writeMSH(voxels, points, numTetra, nome):$/;"	f
+write_output	lib/pocos.py	/^def write_output(filename, well_vertices_index, indexes, zRange, nwbcm):$/;"	f
+x	scripts/corretude.py	/^	x = threading.Thread(target=checkMeshCorrectness, args=(t * numElemsPerThread, t * numElemsPerThread + numElemsPerThread))$/;"	v
+zcornValues	build.py	/^zcornValues = []$/;"	v
+zcornValues	scripts/mesh_coverter.py	/^zcornValues = []$/;"	v
